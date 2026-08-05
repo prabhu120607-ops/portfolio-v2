@@ -65,7 +65,8 @@ p{
     background-color:#061d0a;
     color:#f7f7f7;
     transition:all 0.4s ease;
-    cursor:pointer
+    cursor:pointer;
+    border-color:#061d0a;
 }
 .social-media{
     display: flex;

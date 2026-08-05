@@ -1,0 +1,67 @@
+.sec2{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height:80vh;
+}
+.sec-2-1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec-2-1 > :nth-child(1){
+    font-size: 50px;
+    font-weight: 900;
+    color:#093010;
+}
+.sec-2-2{
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    padding-bottom: 150px;
+    gap: 60px;
+}
+.sec-2-2-1{
+    margin-left: 150px;
+}
+.sec-2-2-1 img{
+    width: 300px;
+}
+.sec-2-2-2{
+    display: flex;
+    flex-direction: column;
+}
+.sec-2-2-2-1{
+    display:flex;
+    gap:40px;
+    padding:10px;
+}
+.sec-2-2-2{
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border : 2px solid;
+    border-radius: 10px;
+    width: 300px;
+    gap: 2px;
+    padding:20px;
+}
+.box img{
+    width: 35px;
+}
+.box > :nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+}
+.box > :nth-child(3),
+.box > :nth-child(4){
+    font-size: 17px;
+}
+.p1{
+    width: 80%;
+}

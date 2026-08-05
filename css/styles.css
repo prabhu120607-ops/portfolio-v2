@@ -57,5 +57,11 @@ a:hover{
     align-items: center;
     height: 70px;
   }
-
+  .navbar-menu menu-bar{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+  }
 }
