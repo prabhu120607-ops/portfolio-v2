@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bitcount+Prop+Single:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geom:ital,wght@0,300..900;1,300..900&family=Oswald:wght@200..700&family=Ponnala&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Geom", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 0 100px;
+}
+.logo{
+  width: 40%; 
+  font-size: 30px;
+  font-weight: 600;
+  color: #004b0c;
+}
+a{
+  text-decoration:none;
+  color: #000000;
+  transition:all 0.3s ease-in-out;  
+}
+a:hover{  
+  color: #004b0c;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color:#004b0c
+}
+.menu-bar{
+  display: flex;
+  list-style: none;
+  width: 60%;
+  justify-content: space-around;
+}
+.menu-bar li{
+  font-size: 18px;
+  font-weight: 500;   
+}
+.navbar-menu{
+  display:none;
+}
+/* responsive */
+@media (max-width: 1080px)
+{
+  .navbar{
+    display:none;
+  }
+  .navbar-menu{
+    display:flex;
+    align-items: center;
+    height: 70px;
+  }
+
+}
