@@ -137,9 +137,9 @@ git push origin feature-name
 
 **Name:** Prabhu Angothu
 
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourusername
-- Email: your.email@example.com
+- GitHub: [https://github.com/yourusername](https://github.com/prabhu120607-ops)
+- LinkedIn: [https://linkedin.com/in/yourusername](https://www.linkedin.com/in/prabhu-kumar-amgothu-6a057034a/)
+- Email:prabhu120607@gmail.com
 
 > Replace the above links with your actual profiles.
 
