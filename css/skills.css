@@ -1,0 +1,199 @@
+/* ==========================================================================
+   Skills Page Specific Styles
+   ========================================================================== */
+.skills-page-header {
+  padding: 60px 24px 30px;
+  text-align: center;
+}
+
+.skills-section {
+  padding: 40px 0 70px;
+}
+
+.skills-category-group {
+  margin-bottom: 50px;
+}
+
+.category-title-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-beige);
+}
+
+.category-title-bar i {
+  font-size: 24px;
+  color: var(--color-brand-green);
+}
+
+.category-title-bar h2 {
+  font-size: 1.65rem;
+  color: var(--color-primary-dark);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #ffffff;
+  border: 2px solid var(--color-accent-dark);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-brand-green);
+  box-shadow: var(--shadow-hover);
+}
+
+.skill-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--color-beige);
+  transition: background-color var(--transition-fast);
+}
+
+.skill-card:hover::after {
+  background-color: var(--color-brand-green);
+}
+
+.skill-icon-wrap {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  background-color: #f7f5ed;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: var(--color-brand-green);
+  transition: transform var(--transition-fast);
+}
+
+.skill-card:hover .skill-icon-wrap {
+  transform: scale(1.1);
+  background-color: var(--color-beige);
+}
+
+.skill-details h3 {
+  font-size: 1.15rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 4px;
+}
+
+.skill-details p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+
+.skill-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #f1ede1;
+  color: var(--color-accent-dark);
+}
+
+/* Currently Learning Section */
+.currently-learning-section {
+  padding: 60px 0 80px;
+  background-color: var(--color-bg-alt);
+  border-top: 1px solid rgba(0, 75, 12, 0.06);
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.learning-card {
+  background: #ffffff;
+  border: 2px dashed var(--color-brand-green);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.learning-card:hover {
+  transform: translateY(-4px);
+  border-style: solid;
+  box-shadow: var(--shadow-hover);
+}
+
+.learning-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-brand-green);
+  background: rgba(0, 75, 12, 0.08);
+  padding: 4px 12px;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+
+.learning-status span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-brand-green);
+  animation: pulse-dot 1.8s infinite;
+}
+
+@keyframes pulse-dot {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.learning-card h3 {
+  font-size: 1.25rem;
+  color: var(--color-primary-dark);
+}
+
+.learning-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Responsive Rules
+   ========================================================================== */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+}
